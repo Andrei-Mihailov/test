@@ -1,0 +1,6 @@
+C:\AMihajlov\Проекты VS\C#\Тест быстродейтсвия прог\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\AMihajlov\Проекты VS\C#\Тест быстродейтсвия прог\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\AMihajlov\Проекты VS\C#\Тест быстродейтсвия прог\ConsoleApplication1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\AMihajlov\Проекты VS\C#\Тест быстродейтсвия прог\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\AMihajlov\Проекты VS\C#\Тест быстродейтсвия прог\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\AMihajlov\Проекты VS\C#\Тест быстродейтсвия прог\ConsoleApplication1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
