@@ -4,3 +4,6 @@ C:\AMihajlov\Проекты VS\C#\Потоки\Threads\Threads\bin\Debug\Threads
 C:\AMihajlov\Проекты VS\C#\Потоки\Threads\Threads\obj\Debug\Threads.csprojResolveAssemblyReference.cache
 C:\AMihajlov\Проекты VS\C#\Потоки\Threads\Threads\obj\Debug\Threads.exe
 C:\AMihajlov\Проекты VS\C#\Потоки\Threads\Threads\obj\Debug\Threads.pdb
+C:\AMihajlov\Проекты VS\C#\test\Потоки\Threads\Threads\bin\Debug\Threads.exe.config
+C:\AMihajlov\Проекты VS\C#\test\Потоки\Threads\Threads\obj\Debug\Threads.exe
+C:\AMihajlov\Проекты VS\C#\test\Потоки\Threads\Threads\obj\Debug\Threads.pdb

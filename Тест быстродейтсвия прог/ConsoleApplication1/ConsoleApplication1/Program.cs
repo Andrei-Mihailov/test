@@ -12,20 +12,22 @@ namespace ConsoleApplication1
         static int[,] myArr = new int[1,6];
         static byte[] reqFlag_ProductExist = { 11, 03, 00, 00, 00, 01 };
         static int i=0, Mode = 0;
+        static bool thread_stop = false;
         static void Main()
         {
             bool Flag_ProductExist = false;
 
-            
             while (true)
             {
                 
                 if (Mode == 0)
                 {
+                    
                     if (Flag_ProductExist)//появился товар
                     {
                         Mode = 1;
-                        //Flag_ProductExist = false;
+                        Flag_ProductExist = false;
+                        thread_stop = false;
                     }
                     else
                     {
@@ -43,21 +45,28 @@ namespace ConsoleApplication1
                     reqContr.IsBackground = true;
                     reqContr.Start();
                     Mode = 0;
+                    reqContr.Join();
                 }
+                
             }
         }
         static void TransmitMassageToController()
         {
             lock (locker)
             {
-                Thread.Sleep(1000);//N ms
-                Console.WriteLine("ProductList");
-                arr();
-                
-
-
+                while (!thread_stop)
+                {
+                    Thread.Sleep(100);//N ms
+                    Console.WriteLine("ProductList");
+                    arr();
+                }
             }
         }
+       /* static void StopThread()
+        {
+            reqContr.Abort();//прерываем поток
+            reqContr.Join(500);//таймаут на завершение
+        }*/
         static void arr()
         {
           
@@ -82,6 +91,7 @@ namespace ConsoleApplication1
                 Console.WriteLine("{0} {1} {2} {3} {4} {5}", myArr[0, 0], myArr[0, 1], myArr[0, 2], myArr[0, 3], myArr[0, 4], myArr[0, 5]);
             }
             i++;
+            thread_stop = true;
         }
         
     }
